@@ -1,41 +1,149 @@
 
-@conatiner-width:960px;
-@column-width:60px;
-@color-black:#000;
-@background:#eee;
-@margin-ryt:20px;
-@padding-all:10px;
-@float-left:left;
-@font14:12px;
-@arial:arial;
+/*--- attribute define ---*/
+  @color-black:#000;
+  @color-red:#FE0000;
+  @color-ligthgreen:#01FFFF;
+  @color-green:#008001;
+  @color-yellow:#FFFF01;
+  @color-pink:#FF00FF;
+  @color-grey:#808080;
+  @color-orange:#FF6448;
+  @color-white:#FFF;
+  @color-parrot:#80FF00;
+  @color-royalblue:#0101FF;
+  @width-full:100%;
+  @gutter:10px;
+  @font60:60px;
+  @arial:arial;
+  @conatiner-width:960px;
+  @column-width:60px;
 
-.rounded-borders{
- -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-         border-radius: 10px;
-}
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-.background{
-	padding:20px 0 0;
-}
-.container{
-	margin:0 auto;
-	width:@conatiner-width;
-}
-.column-block{
-	background:@background;
-	color:@color-black;
-	float:@float-left;
-	font-family:@arial;
-	font-size:@font14;
-	margin-right:@margin-ryt;
-	padding:@padding-all;
-	width:@column-width;
-	.rounded-borders;
-}
+/*--- mixins container ---*/
+  .rounded-borders{
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+           border-radius: 10px;
+  }
+/*--- attribute container ---*/
+  .column-block-a{
+  	background:@color-black;
+  	color:@color-yellow;
+    width:@width-full;
+  }
+  .column-block-b{
+    background:@color-red;
+    color:@color-black;
+    margin-right:@gutter*2;
+    width:@width-full/1.118;
+  }
+  .column-block-c{
+    background:@color-black;
+    color:@color-red;
+    width:@width-full/12;
+  }
+  .column-block-d{
+    background:@color-ligthgreen;
+    color:@color-green;
+    width:@width-full;
+  }
+  .column-block-e{
+    background:@color-green;
+    color:@color-white;
+    margin-right:@gutter*2;
+    width:@width-full/1.89;
+  }
+  .column-block-f{
+    background:@color-yellow;
+    color:@color-black;
+    margin-right:@gutter*2;
+    width:@width-full/5;
+  }
+  .column-block-g{
+    background:@color-yellow;
+    color:@color-black;
+    width:@width-full/5;
+  }
+  .column-block-h{
+    background:@color-green;
+    color:@color-white;
+    margin-left:@gutter*2;
+    min-height: 245px;
+    padding-bottom:@gutter*8  !important;
+    padding-top:@gutter*8 !important;
+    width:@width-full/1.076;
+  }
+  .column-block-i{
+    background:@color-pink;
+    color:@color-ligthgreen;
+    width:@width-full/2;
+  }
+  .column-block-j{
+    background:@color-grey;
+    color:@color-parrot;
+    margin-left:@gutter*2;
+    width:@width-full/4.39;
+  }
+  .column-block-k{
+    background:@color-grey;
+    color:@color-red;
+    margin-left:@gutter*2;
+    width:@width-full/4.39;
+  }
+  .column-block-l{
+    background:@color-orange;
+    color:@color-ligthgreen;
+    margin-bottom: @gutter*0 !important;
+    width: @width-full/1.335;
+  }
+  .column-block-m{
+    background:@color-grey;
+    color:@color-royalblue;
+    margin-left:@gutter*2;
+    margin-bottom: @gutter*0 !important;
+    width:@width-full/4.39;
+  }
+
+  /*--- classes define ---*/
+  *{
+    margin:@gutter*0;
+    padding:@gutter*0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  body{
+    background: @color-black;
+  }
+  .background{
+    background: @color-white;
+    padding:@gutter;
+    width: @width-full;
+    .rounded-borders;
+  }
+  .container{
+    margin:0 auto;
+    width:@conatiner-width;
+  }
+  .first-part{
+    width: @width-full/1.5;
+  }
+  .second-part{
+    width: @width-full/3;
+  }
+  .column-block{
+    padding-top:@gutter*2;
+    padding-bottom:@gutter*2;
+    text-align:center;
+    font-size:@font60;
+    font-family:@arial;
+    margin-bottom:10px*2;
+    float:left;
+    border:solid 1px @color-black;
+    .rounded-borders;
+  }
+  .pull-left{
+    float:left ;
+  }
+  .pull-right{
+    float:right;
+  }
