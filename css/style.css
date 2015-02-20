@@ -1,12 +1,48 @@
 /*--- attribute define ---*/
 /*--- mixins container ---*/
-.rounded-borders {
+/*--- attribute container ---*/
+.width-twenty,
+.column-block-f,
+.column-block-g {
+  width: 20%;
+}
+.width-twentpoint,
+.column-block-j,
+.column-block-k,
+.column-block-m {
+  width: 22.779043280182233%;
+}
+.padding-more,
+.column-block-h {
+  padding-bottom: 86px;
+  padding-top: 86px;
+}
+.column-block,
+.column-block-a,
+.column-block-b,
+.column-block-c,
+.column-block-d,
+.column-block-e,
+.column-block-f,
+.column-block-g,
+.column-block-h,
+.column-block-i,
+.column-block-j,
+.column-block-k,
+.column-block-l,
+.column-block-m {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-family: arial;
+  margin-bottom: 20px;
+  float: left;
+  border: solid 1px #000000;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
   border-radius: 10px;
 }
-/*--- attribute container ---*/
 .column-block-a {
   background: #000000;
   color: #ffff01;
@@ -38,19 +74,15 @@
   background: #ffff01;
   color: #000000;
   margin-right: 20px;
-  width: 20%;
 }
 .column-block-g {
   background: #ffff01;
   color: #000000;
-  width: 20%;
 }
 .column-block-h {
   background: #008001;
   color: #ffffff;
   margin-left: 20px;
-  padding-bottom: 86px !important;
-  padding-top: 86px !important;
   width: 92.93680297397769%;
 }
 .column-block-i {
@@ -68,7 +100,6 @@
   background: #808080;
   color: #fe0000;
   margin-left: 20px;
-  width: 22.779043280182233%;
 }
 .column-block-l {
   background: #ff6448;
@@ -81,7 +112,6 @@
   color: #0101ff;
   margin-left: 20px;
   margin-bottom: 0px !important;
-  width: 22.779043280182233%;
 }
 /*--- classes define ---*/
 * {
@@ -99,7 +129,6 @@ body {
   width: 100%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
   border-radius: 10px;
 }
 .container {
@@ -111,20 +140,6 @@ body {
 }
 .second-part {
   width: 33.333333333333336%;
-}
-.column-block {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-size: 60px;
-  font-family: arial;
-  margin-bottom: 20px;
-  float: left;
-  border: solid 1px #000000;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
 }
 .pull-left {
   float: left ;
